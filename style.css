@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.menu h1 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.menu p {
+    color: grey;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.screen {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.red-screen {
+    background-color: red;
+}
+
+.green-screen {
+    background-color: green;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#timeResult {
+    font-weight: bold;
+    font-size: 1.5em;
+}
