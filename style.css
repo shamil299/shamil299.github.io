@@ -13,18 +13,6 @@ body {
     background-color: #fafafa;
 }
 
-.menu h1 {
-    color: black;
-    font-size: 2em;
-    margin-bottom: 1rem;
-}
-
-.menu p {
-    color: grey;
-    font-size: 1.2em;
-    margin-bottom: 2rem;
-}
-
 .hidden {
     display: none !important;
 }
@@ -43,14 +31,4 @@ body {
 
 .green-screen {
     background-color: green;
-}
-
-#result {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#timeResult {
-    font-weight: bold;
-    font-size: 1.5em;
 }

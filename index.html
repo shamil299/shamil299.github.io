@@ -7,20 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Начальное меню -->
     <section class="menu">
         <h1>Проверка скорости реакции</h1>
         <p>Коснитесь экрана как только он станет зелёным.</p>
         <button onclick="startGame()">Начать</button>
     </section>
 
-    <!-- Игра -->
     <section class="game hidden">
         <div id="screen" class="screen red-screen"></div>
-        <div id="result" class="hidden">
-            Ваш результат: <span id="timeResult"></span> мс<br><br>
-            Чтобы попробовать ещё раз, коснитесь экрана.
-        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@telegram/widgets@latest/telegram-widgets.js"></script>
