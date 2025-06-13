@@ -21,8 +21,8 @@ function changeScreen() {
 screenEl.addEventListener('click', handleClick);
 
 function handleClick() {
-    alert('Клик зарегистрирован!');
-    
+    // alert('Клик зарегистрирован!');
+
     if (!gameStarted || !screenEl.classList.contains('green-screen')) return;
 
     // Замер результата
