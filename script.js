@@ -21,6 +21,8 @@ function changeScreen() {
 screenEl.addEventListener('click', handleClick);
 
 function handleClick() {
+    alert('Клик зарегистрирован!');
+    
     if (!gameStarted || !screenEl.classList.contains('green-screen')) return;
 
     // Замер результата
@@ -32,5 +34,13 @@ function handleClick() {
     tg.sendData(JSON.stringify({ reaction_time: resultInMs }));
     tg.close(); // Закрытие окна игры
 
-    // Далее игра начнётся заново после повторного открытия
+    // Сбрасываем состояние игры для новой попытки
+    gameStarted = false;
+    screenEl.classList.remove('green-screen');
+    screenEl.classList.add('red-screen');
 }
+
+// Для дебага добавим обработчик загрузки документа
+window.onload = function() {
+    console.log('Документ загружен.');
+};
